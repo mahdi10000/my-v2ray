@@ -9,4 +9,4 @@ RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
 
 COPY config.json /mtech/config.json
 
-CMD ["/mtech/v2ray", "-config", "/mtech/config.json"]
+CMD ["/mtech/v2ray", "run", "-config", "/mtech/config.json"]
